@@ -1,0 +1,33 @@
+.table-container {
+    width: 80%; /* Adjust the width to make it larger or smaller */
+    margin: 0 auto; /* This centers the table horizontally */
+    padding: 20px;
+  }
+  
+  .full-width-table {
+    width: 100%; /* Make the table take up the full width of the container */
+  }
+  
+  mat-paginator {
+    margin-top: 10px; /* Add some space between the table and the paginator */
+  }
+  
+  /* Optional: Add some margin to buttons */
+  button {
+    margin-right: 10px;
+  }
+
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+
+  .search-container{
+    margin-left: auto;
+  }
+
+  .mat-header-cell {
+    text-align: left; /* Optional: Align text to the left */
+    background-color: rgb(108, 108, 148); /* Change this to your desired background color */
+    color: white; /* Change this to your desired text color */
+    padding: 10px; /* Optional: Add padding for better spacing */
+  }

@@ -1,0 +1,26 @@
+<div class="userForm">
+  <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <mat-form-field>
+      <mat-label>Name</mat-label>
+      <input matInput formControlName="name">
+      <mat-error *ngIf="userForm.get('name')?.invalid">Name is required</mat-error>
+    </mat-form-field>
+  
+    <mat-form-field>
+      <mat-label>Email</mat-label>
+      <input matInput formControlName="email">
+      <mat-error *ngIf="userForm.get('email')?.invalid">Enter a valid email</mat-error>
+    </mat-form-field>
+  
+    <mat-form-field>
+      <mat-label>Role</mat-label>
+      <mat-select formControlName="role">
+        <mat-option value="Admin">Admin</mat-option>
+        <mat-option value="User">User</mat-option>
+      </mat-select>
+    </mat-form-field>
+  
+    <button mat-raised-button color="primary" [disabled]="userForm.invalid">Submit</button>
+    <button mat-button (click)="cancel()">Cancel</button>
+  </form>
+</div>
